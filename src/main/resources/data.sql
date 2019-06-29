@@ -9,3 +9,15 @@ insert into user (user_id, password, first_name, last_name, email, company, phon
 ('jjacobs7'  , 'jjacobs7' , 'Justin'   , 'Jacobs'  , 'jjacobs7@google.co.uk'  , 'Harris-Bashirian', '963-(199)359-2552', '95012 Hanover Street', '2377'           , 'India'      , null   , 'USER' , 1, 0, 10000, 20002, 'motivating'    , 'Crimson', 1, 0),
 ('kbennett8' , 'kbennett8', 'Kevin'    , 'Bennett' , 'kbennett8@hostgator.com', 'Leannon Inc', '62-(892)710-5713', '459 Coleman Drive', '397'                     , 'Indonesia'  , null   , 'ADMIN', 0, 0, 10001, 20000, 'Exclusive'     , 'Purple' , 1, 1),
 ('cmurphy9'  , 'cmurphy9' , 'Chris'    , 'Murphy'  , 'cmurphy9@over-blog.com' , 'Mosciski LLC', '64-(272)961-0086', '2 Ludington Point', '7'                      , 'New Zealand', null   , 'ADMIN', 0, 1, 10000, 20000, 'empowering'    , 'Maroon' , 0, 1);
+
+insert into divisions (id, name) values
+(1, 'Dota 2'),
+(2, 'CS: GO'),
+(3, 'Call of Duty'),
+(4, 'PUBG'),
+(5, 'League of Legends'),
+(6, 'APEX Legends'),
+(7, 'StarCraft II'),
+(8, 'Rocket League'),
+(9, 'Fortnite'),
+(10,'FIFA');
