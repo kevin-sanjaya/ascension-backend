@@ -27,3 +27,9 @@ CREATE TABLE user (
     enable_renewal      TINYINT,
     CONSTRAINT user_id PRIMARY KEY(user_id)
 );
+
+CREATE TABLE divisions (
+  id            INT NOT NULL,
+  name          NVARCHAR(50) NOT NULL UNIQUE,
+  PRIMARY KEY (id)
+);
