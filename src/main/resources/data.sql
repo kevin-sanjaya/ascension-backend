@@ -21,3 +21,10 @@ insert into divisions (id, name) values
 (8, 'Rocket League'),
 (9, 'Fortnite'),
 (10,'FIFA');
+
+insert into roosters (id, name, nickname, age, country, role, avatar, is_captain, division_id) values
+('FWWRK', 'Alfred Roos', 'K1NG', 23, 'United States', 'Support', null, true, 1),
+('P499E', 'Alfred Roos', 'K1NG', 23, 'United States', 'Support', null, true, 1),
+('2DG9Z', 'Alfred Roos', 'K1NG', 23, 'United States', 'Support', null, true, 2),
+('UZ4TG', 'Alfred Roos', 'K1NG', 23, 'United States', 'Support', null, true, 2),
+('G8GVE', 'Alfred Roos', 'K1NG', 23, 'United States', 'Support', null, true, 3);

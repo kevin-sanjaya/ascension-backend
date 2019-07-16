@@ -33,3 +33,17 @@ CREATE TABLE divisions (
   name          NVARCHAR(50) NOT NULL UNIQUE,
   PRIMARY KEY (id)
 );
+
+CREATE TABLE roosters (
+  id            NVARCHAR(10) NOT NULL,
+  name          NVARCHAR(50) NOT NULL,
+  nickname      NVARCHAR(50) NOT NULL,
+  age           INT NOT NULL,
+  country       NVARCHAR(50) NOT NULL,
+  role          NVARCHAR(50) NOT NULL,
+  avatar        NVARCHAR(50),
+  is_captain    BOOLEAN NOT NULL,
+  division_id   NVARCHAR(50) NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY(division_id) REFERENCES divisions
+);
