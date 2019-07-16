@@ -41,11 +41,6 @@ public class RoosterController {
         if (id != null)
             qry.setId(id);
 
-        List<Rooster> test = this.roosterRepo.findAll();
-        for(int i =0; i<test.size();i++){
-            System.out.println(test.get(i).getDivisionId());
-        }
-        // System.out.println(roosterRepo.exists(id));
         Page<Rooster> roosterPage = roosterRepo.findAll(org.springframework.data.domain.Example.of(qry), pageable);
         resp.setPageStats(roosterPage, true);
         resp.setRoosters(roosterPage.getContent());
